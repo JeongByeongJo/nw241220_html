@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>    
+    <script>       
+        var sum = 0;
+        for (let i = 1; i <= 10; i++) {
+            sum += i;            
+        }
+        alert(sum);
+        
+
+        for (let i = 1; i < 10; i++) {
+            //console.log("2x" + i + "=" + 2*i)
+        }
+        
+        // var star = "*";
+        // for (let i = 0; i < 5; i++) {           
+        //    // console.log(star);  
+        //     star = star + "*";        
+        // }
+
+        var num = 5;
+        var index = num*2;
+        
+        for (let i = 0; i < num; i++) {
+            var star = "";
+            for (let j = 0; j < index - 1; j++) {
+                if (j <= num + i -1 && j >= num - i - 1) {
+                    star += "*";
+                } else {
+                    star += " ";
+                }
+            }
+            console.log(star);
+        }
+
+        
+    </script>
+</body>
+</html>
